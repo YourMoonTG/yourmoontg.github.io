@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Committer - ИИ система для Telegram-каналов | Moon Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Smart Committer — интеллектуальная система на C++20 для мониторинга Telegram-каналов и автогенерации ответов на базе OpenAI GPT-4. Production Ready проект.">
+    <meta name="keywords" content="Smart Committer, ИИ система, Telegram боты, C++20, PostgreSQL, OpenAI GPT-4, автоматизация, мониторинг каналов">
+    <meta name="author" content="Moon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourmoontg.github.io/projects/smart-committer.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://yourmoontg.github.io/projects/smart-committer.html">
+    <meta property="og:title" content="Smart Committer - ИИ система для Telegram-каналов">
+    <meta property="og:description" content="Интеллектуальная система на C++20 для мониторинга Telegram-каналов и автогенерации ответов на базе OpenAI GPT-4.">
+    <meta property="og:image" content="https://yourmoontg.github.io/assets/icons/icon-robot.svg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Moon Portfolio">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourmoontg.github.io/projects/smart-committer.html">
+    <meta name="twitter:title" content="Smart Committer - ИИ система для Telegram-каналов">
+    <meta name="twitter:description" content="Интеллектуальная система на C++20 для мониторинга Telegram-каналов и автогенерации ответов на базе OpenAI GPT-4.">
+    <meta name="twitter:image" content="https://yourmoontg.github.io/assets/icons/icon-robot.svg">
+
+    <!-- Browser UI theming -->
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Smart Committer",
+      "applicationCategory": "BusinessApplication",
+      "description": "Интеллектуальная система для мониторинга Telegram-каналов и автогенерации ответов на базе ИИ",
+      "url": "https://yourmoontg.github.io/projects/smart-committer.html",
+      "author": {
+        "@type": "Person",
+        "name": "Moon"
+      },
+      "programmingLanguage": ["C++20", "PostgreSQL"],
+      "operatingSystem": "Linux"
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="smart-committer.css">
+    
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="../index.html" class="logo-link">
+                        <span class="logo-text">Moon</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <a href="../index.html#about" class="nav-link">О себе</a>
+                    <a href="../index.html#portfolio" class="nav-link">Портфолио</a>
+                    <a href="../blog.html" class="nav-link">Блог</a>
+                    <a href="../index.html#contact" class="nav-link">Контакты</a>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
+                    <img class="theme-icon icon-img icon-24" src="../assets/icons/icon-moon.svg" alt="Тёмная тема">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero секция проекта -->
+    <section class="project-hero">
+        <!-- Матрица сообщений (фоновая анимация) -->
+        <div class="matrix-bg" id="matrix-bg"></div>
+        
+        <div class="container">
+            <div class="project-hero-content">
+                <div class="project-breadcrumb">
+                    <a href="../index.html">Главная</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <a href="../index.html#portfolio">Портфолио</a>
+                    <span class="breadcrumb-separator">/</span>
+                    <span class="breadcrumb-current">Smart Committer</span>
+                </div>
+                
+                <h1 class="project-title">Smart Committer</h1>
+                <p class="project-subtitle">Платформа, автоматизирующая рекламу в Telegram за счёт управляемых диалогов: входящие сообщения превращаются в осмысленные ответы от разных аккаунтов с собственными персонами и антидетект‑логикой.</p>
+                
+                <div class="project-meta">
+                    <div class="project-category">
+                        <img class="category-icon icon-img" src="../assets/icons/icon-robot.svg" alt="ИИ и автоматизация">
+                        <span>Telegram & Автоматизация</span>
+                    </div>
+                    <div class="project-year">2025–2026</div>
+                    <div class="project-status">
+                        <span class="status-badge status-completed">Production Ready</span>
+                    </div>
+                </div>
+
+                <!-- Визуал: IDE с diff + панель коммита -->
+                <div class="sc-hero-layout">
+                    <!-- Сырой поток комментариев -->
+                    <div class="sc-hero-left" aria-label="Примеры реальных комментариев в Telegram">
+                        <div class="sc-chat-header">
+                            <div class="sc-chat-title">
+                                <span class="sc-chat-dot"></span>
+                                <span>Telegram · live feed</span>
+                            </div>
+                            <span class="sc-chat-badge">20+ каналов</span>
+                        </div>
+                        <div class="sc-chat-stream">
+                            <div class="sc-chat-msg sc-chat-msg-in">
+                                <div class="sc-chat-author">@user314</div>
+                                <div class="sc-chat-text">Ты так скоро бан словишь, честно.</div>
+                            </div>
+                            <div class="sc-chat-msg sc-chat-msg-in">
+                                <div class="sc-chat-author">@crypto_hmm</div>
+                                <div class="sc-chat-text">Если тут столько акков, вы как баны не ловите?</div>
+                            </div>
+                            <div class="sc-chat-msg sc-chat-msg-in">
+                                <div class="sc-chat-author">@ads_buyer</div>
+                                <div class="sc-chat-text">Это всё автопостинг или реально люди руками отвечают?</div>
+                            </div>
+                            <div class="sc-chat-footer">
+                                Поток реальных сообщений из десятков каналов, с разным тоном и контекстом.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ответ Smart Committer, который выглядит как живой -->
+                    <div class="sc-hero-right" aria-label="Как Smart Committer отвечает в комментариях">
+                        <div class="sc-commit-header">
+                            <span class="sc-commit-label">Smart Committer · reply preview</span>
+                            <span class="sc-commit-status">human‑score&nbsp;97%</span>
+                        </div>
+
+                        <div class="sc-reply-bubble">
+                            <div class="sc-reply-meta">
+                                <span class="sc-reply-author">@user</span>
+                                <span class="sc-reply-label">ответы от разных аккаунтов</span>
+                            </div>
+                            <div class="sc-reply-text">
+                                @ads_buy: Я ж не крипто спамер, чтобы меня с порога банили.<br>
+                                @traf_acc1: У нас каждый акк сам пишет, со своим тоном и подачей.<br>
+                                @traf_acc2: Не, автопостинга тут нет, руками всё. Был бы бот, давно бы отъехали.<br>
+                                @traf_acc3: Если в лоб долбить, получишь бан. Поэтому аккуратно льём трафик, без цирка.
+                            </div>
+                        </div>
+
+                        <div class="sc-commit-variants">
+                            <span class="sc-variant sc-variant-active">accounts&nbsp;4&nbsp;/&nbsp;6&nbsp;active</span>
+                            <span class="sc-variant">risk: low</span>
+                            <span class="sc-variant">mode: conservative</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обзор проекта -->
+    <section class="project-overview">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Обзор проекта</h2>
+                    <p>С точки зрения инженерии <span class="highlight">Smart Committer</span> — это C++‑ядро вокруг Telegram с очередями задач, воркер‑пулом, интеграцией с ИИ‑провайдерами и собственным слоем антидетекта. Система превращает поток событий из Telegram в нормализованные записи в базе, раскладывает их по очередям (сообщения, генерация, аналитика) и управляет пачкой аккаунтов как единой инфраструктурой, а не набором разрозненных скриптов.</p>
+                    
+                    <h3>Ключевые возможности:</h3>
+                    <ul class="feature-list">
+                        <li>Мониторинг десятков Telegram‑каналов и чатов под рекламные кампании</li>
+                        <li>Автоматическая генерация диалогов и подогревающих ответов на базе GPT‑4 и Claude</li>
+                        <li>Поддержка многoаккаунтности: у каждого аккаунта своя персона, промпт и стиль</li>
+                        <li>Симуляция живого поведения на основе поведенческих паттернов и историй аккаунтов, чтобы диалоги не ощущались как ответы бота</li>
+                        <li>Очереди задач и воркер‑пул для стабильной работы под нагрузкой</li>
+                        <li>Антидетект‑движок, который опирается на 20+ внутренних метрик риска и эффективности и помогает держать аккаунты живыми под нагрузкой</li>
+                        <li>Фокус не на красивых дашбордах, а на выручке: трекаются ответы, конверсии и здоровье аккаунтов, чтобы вовремя видеть, какие кампании зарабатывают, а какие лучше остановить или пересобрать.</li>
+                    </ul>
+                </div>
+                
+                <div class="overview-image">
+                    <div class="project-placeholder-large">
+                        <img class="placeholder-icon icon-img icon-64" src="../assets/icons/icon-robot.svg" alt="Smart Committer">
+                        <span>Архитектура Smart Committer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Как это выглядело на практике -->
+    <section class="project-case">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <h2>Контекст, задачи и результат</h2>
+                    <p><span class="highlight">Smart Committer</span> изначально задумывался не как «умная модерация», а как инструмент под <span class="highlight">авто‑рекламу через диалоги</span>. У команды уже были живые Telegram‑каналы и пачка рекламных аккаунтов, которые нужно было постоянно подсаживать в комменты, поддерживать обсуждения и мягко подводить людей к офферам. Ручной разбор ленты и ответы с нескольких аккаунтов съедали часы в день, а первые «полуавтоматические» скрипты быстро ловили блокировки и вели себя слишком палевно.</p>
+                    
+                    <p>Задача&nbsp;&mdash; собрать <span class="highlight">управляемый конвейер авто‑рекламы</span>, который стабильно мониторит десятки каналов и чатов, подхватывает нужные триггеры, предлагает живые ответы на базе ИИ и при этом не палится как бот: аккуратные лимиты, антидетект‑движок, работающий на <span class="highlight">20+ внутренних метриках</span>, и прозрачная логика, что именно система делает с каждым сообщением.</p>
+                    
+                    <h3>Как это решали</h3>
+                    <p>Разрозненные скрипты и ручную работу собрали в один конвейер: события из Telegram нормализуются, размечаются по кампаниям и сценариям (оффер, тон, допустимая агрессия), дальше уходят в ИИ‑модели с разными промптами под конкретные аккаунты и только потом проходят антидетект‑слой перед отправкой. Всё это опирается на C++‑ядро, PostgreSQL, очереди, воркер‑пул и интеграции с ИИ‑провайдерами и Telegram, которые уже описаны в блоках с обзором и стеком.</p>
+                    
+                    <h3>Что изменилось для команды</h3>
+                    <p>Команда закупки и модерации перестала жить в ручных ответах: система сама раздаёт львиную долю простых рекламных и подогревающих сообщений, люди подключаются только там, где спорный кейс или важно очень тонко попасть в формулировку. Платформа нормально переваривает рост по каналам, креативам и аккаунтам, а поведение профилей снаружи выглядит как разношёрстные <span class="highlight">живые люди</span>, а не один большой рекламный бот с шаблонными репликами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Технологический стек -->
+    <section class="project-tech">
+        <div class="container">
+            <h2>Технологический стек</h2>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h3>Основные технологии</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag tech-cpp" data-tooltip="10× производительность vs Python">C++20</span>
+                        <span class="tech-tag tech-cmake" data-tooltip="Кроссплатформенная сборка">CMake</span>
+                        <span class="tech-tag tech-boost" data-tooltip="Асинхронность и networking">Boost</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>База данных</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag tech-postgresql" data-tooltip="2M+ записей, <50ms запросы">PostgreSQL</span>
+                        <span class="tech-tag tech-sql" data-tooltip="Оптимизированные запросы">SQL</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Сеть и безопасность</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag tech-openssl" data-tooltip="TLS 1.3, шифрование">OpenSSL</span>
+                        <span class="tech-tag tech-curl" data-tooltip="HTTP/2, прокси">libcurl</span>
+                        <span class="tech-tag tech-json" data-tooltip="Быстрый парсинг JSON">nlohmann/json</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>ИИ и API</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag tech-openai" data-tooltip="Генерация естественных ответов">OpenAI GPT-4</span>
+                        <span class="tech-tag tech-claude" data-tooltip="Сложные контексты, fallback">Anthropic Claude</span>
+                        <span class="tech-tag tech-telegram" data-tooltip="MTProto, мониторинг">Telegram API</span>
+                    </div>
+                </div>
+                
+                <div class="tech-category">
+                    <h3>Инструменты</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag tech-spdlog" data-tooltip="Структурированные логи">spdlog</span>
+                        <span class="tech-tag tech-docker" data-tooltip="Blue-Green деплой">Docker</span>
+                        <span class="tech-tag tech-git" data-tooltip="Версионирование">Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Антидетект -->
+    <section class="project-antidetect" id="antidetect">
+        <div class="container">
+            <h2>Антидетект</h2>
+            <div class="antidetect-grid">
+                <div class="antidetect-card">
+                    <div class="antidetect-header">
+                        <div class="anti-icon-circle">
+                            <img src="../assets/icons/icon-behavior.svg" alt="Поведение и ротация">
+                        </div>
+                        <div>
+                            <div class="anti-label">Стратегия</div>
+                            <div class="anti-title">Поведение и ротация</div>
+                        </div>
+                    </div>
+                    <ul class="anti-list">
+                        <li>Вариативные паттерны действий, рандомизация пауз и порядка шагов</li>
+                        <li>Контроль частоты: защитные лимиты, мягкие кулдауны</li>
+                        <li>Ротация каналов подключения без раскрытия конкретных средств</li>
+                    </ul>
+                </div>
+
+                <div class="antidetect-card">
+                    <div class="antidetect-header">
+                        <div class="anti-icon-circle">
+                            <img src="../assets/icons/icon-traffic.svg" alt="Мониторинг сигналов">
+                        </div>
+                        <div>
+                            <div class="anti-label">Мониторинг</div>
+                            <div class="anti-title">Сигналы платформы</div>
+                        </div>
+                    </div>
+                    <ul class="anti-list">
+                        <li>Алерты по капчам, 429 и другим «жёлтым» сигналам</li>
+                        <li>Отслеживание аномалий и «подозрительных» профилей трафика</li>
+                        <li>Логи решений: кто, когда, почему ушёл в паузу</li>
+                    </ul>
+                </div>
+
+                <div class="antidetect-card anti-wide">
+                    <div class="antidetect-header">
+                        <div class="anti-icon-circle">
+                            <img src="../assets/icons/icon-incident.svg" alt="Процедуры реакции">
+                        </div>
+                        <div>
+                            <div class="anti-label">Инциденты</div>
+                            <div class="anti-title">Процедура реакции</div>
+                        </div>
+                    </div>
+                    <div class="anti-steps">
+                        <div class="anti-step">
+                            <span class="anti-step-badge">1</span>
+                            <div class="anti-step-text">
+                                <div class="anti-step-title">Детект</div>
+                                <div class="anti-step-desc">Фиксируем сигнал (капча/блок/rate limit)</div>
+                            </div>
+                        </div>
+                        <div class="anti-step">
+                            <span class="anti-step-badge">2</span>
+                            <div class="anti-step-text">
+                                <div class="anti-step-title">Пауза</div>
+                                <div class="anti-step-desc">Авто-кулдаун для аккаунта или пула</div>
+                            </div>
+                        </div>
+                        <div class="anti-step">
+                            <span class="anti-step-badge">3</span>
+                            <div class="anti-step-text">
+                                <div class="anti-step-title">Восстановление</div>
+                                <div class="anti-step-desc">Перезапуск с безопасными параметрами, повторный мониторинг</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anti-metrics">
+                        <div class="anti-metric">
+                            <div class="anti-metric-label">Баны/неделю</div>
+                            <div class="anti-metric-value">низко</div>
+                        </div>
+                        <div class="anti-metric">
+                            <div class="anti-metric-label">Время реакции</div>
+                            <div class="anti-metric-value">&lt; 1 мин</div>
+                        </div>
+                        <div class="anti-metric">
+                            <div class="anti-metric-label">Возврат в пул</div>
+                            <div class="anti-metric-value">пошагово</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Архитектура (заглушка) -->
+    <section class="project-architecture" id="architecture">
+        <div class="container">
+            <h2>Архитектура системы</h2>
+            <p class="arch-hint">Подробная схема архитектуры сейчас в работе и появится здесь позже.</p>
+            <div class="arch-diagram-wrapper">
+                <div class="project-placeholder-large">
+                    <img class="placeholder-icon icon-img icon-64" src="../assets/icons/icon-stack.svg" alt="Архитектура Smart Committer">
+                    <span>Раздел архитектуры в доработке</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс разработки -->
+    <section class="project-process">
+        <div class="container">
+            <h2>Процесс разработки</h2>
+            <div class="process-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Фаза 1: MVP</h3>
+                        <p>Базовая интеграция с Telegram, генерация ответов ИИ, управление аккаунтами, операции с базой данных</p>
+                        <span class="timeline-status completed">✅ Завершено</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Фаза 2: Продвинутые функции</h3>
+                        <p>Симуляция поведения, продвинутая аналитика, мониторинг рисков, оптимизация производительности</p>
+                        <span class="timeline-status completed">✅ Завершено</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Фаза 3: Масштабирование</h3>
+                        <p>Поддержка множественных платформ, продвинутые ИИ модели, интеграция машинного обучения</p>
+                        <span class="timeline-status completed">✅ Завершено</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Фаза 4: Продакшн</h3>
+                        <p>Комплексное тестирование, аудит безопасности, Blue-Green деплой, автоматизация развертывания</p>
+                        <span class="timeline-status completed">✅ Завершено</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Результаты -->
+    <section class="project-results">
+        <div class="container">
+            <h2>Результаты и достижения</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <img class="result-icon icon-img" src="../assets/icons/icon-zap.svg" alt="Высокая производительность">
+                    <div class="metric-value">1200+</div>
+                    <div class="metric-label">запросов/сек</div>
+                    <p>Высокопроизводительная обработка с минимальной задержкой &lt;2s</p>
+                </div>
+                
+                <div class="result-card">
+                    <img class="result-icon icon-img" src="../assets/icons/icon-shield.svg" alt="Надёжность и uptime">
+                    <div class="metric-value">99.95%</div>
+                    <div class="metric-label">uptime</div>
+                    <p>Встроенная защита от детектирования с автоматической ротацией</p>
+                </div>
+                
+                <div class="result-card">
+                    <img class="result-icon icon-img" src="../assets/icons/icon-user.svg" alt="Естественность ответов">
+                    <div class="metric-value">97%</div>
+                    <div class="metric-label">Human Score</div>
+                    <p>Естественность ответов, неотличимых от реальных пользователей</p>
+                </div>
+                
+                <div class="result-card">
+                    <img class="result-icon icon-img" src="../assets/icons/icon-stack.svg" alt="Масштабируемость аккаунтов">
+                    <div class="metric-value">2000+</div>
+                    <div class="metric-label">аккаунтов</div>
+                    <p>Масштабируемая архитектура с поддержкой тысяч аккаунтов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ссылки -->
+    <section class="project-links">
+        <div class="container">
+            <h2>Ссылки и ресурсы</h2>
+            <div class="links-grid">
+                <div class="link-card link-card-static">
+                    <img class="link-icon icon-img" src="../assets/icons/icon-stack.svg" alt="Документация">
+                    <h3>Документация</h3>
+                    <p>Подробная техническая документация появится позже, когда систему можно будет описать без упрощений.</p>
+                </div>
+                
+                <div class="link-card link-card-static">
+                    <img class="link-icon icon-img" src="../assets/icons/icon-laptop.svg" alt="Демо">
+                    <h3>Демо</h3>
+                    <p>Планируется интерактивное демо с примерами сценариев и поведения системы под нагрузкой.</p>
+                </div>
+                
+                <div class="link-card link-card-static">
+                    <img class="link-icon icon-img" src="../assets/icons/icon-chart.svg" alt="Аналитика">
+                    <h3>Аналитика</h3>
+                    <p>Здесь будет ссылка на дашборды и метрики, когда оформлю публичную версию мониторинга.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навигация между проектами -->
+    <section class="project-navigation">
+        <div class="container">
+            <div class="nav-projects">
+                <a href="tebium-ecosystem.html" class="nav-project prev">
+                    <span class="nav-arrow">←</span>
+                    <div class="nav-content">
+                        <span class="nav-label">Предыдущий проект</span>
+                        <span class="nav-title">TeBium Ecosystem</span>
+                    </div>
+                </a>
+                
+                <a href="../index.html#portfolio" class="nav-project back">
+                    <span class="nav-label">Все проекты</span>
+                </a>
+                
+                <a href="custom-linux.html" class="nav-project next">
+                    <div class="nav-content">
+                        <span class="nav-label">Следующий проект</span>
+                        <span class="nav-title">Кастомный Linux</span>
+                    </div>
+                    <span class="nav-arrow">→</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script src="smart-committer.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon - Программист | ИИ‑сервисы, Telegram‑экосистемы, Backend</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Moon — программист, специализирующийся на ИИ‑сервисах, Telegram‑экосистемах и backend‑системах. Помогаю запускать и масштабировать высоконагруженные сервисы с упором на производительность и надёжность.">
+    <meta name="keywords" content="программист, разработчик, ИИ сервисы, Telegram боты, backend разработка, Python, C++, архитектура систем, DevOps">
+    <meta name="author" content="Moon">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourmoontg.github.io/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourmoontg.github.io/">
+    <meta property="og:title" content="Moon - Программист | ИИ‑сервисы, Telegram‑экосистемы, Backend">
+    <meta property="og:description" content="Помогаю запускать и масштабировать ИИ‑сервисы, Telegram‑экосистемы и backend‑системы с упором на производительность, надёжность и понятную архитектуру.">
+    <meta property="og:image" content="https://yourmoontg.github.io/assets/icons/icon-robot.svg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Moon Portfolio">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://yourmoontg.github.io/">
+    <meta name="twitter:title" content="Moon - Программист | ИИ‑сервисы, Telegram‑экосистемы, Backend">
+    <meta name="twitter:description" content="Помогаю запускать и масштабировать ИИ‑сервисы, Telegram‑экосистемы и backend‑системы с упором на производительность, надёжность и понятную архитектуру.">
+    <meta name="twitter:image" content="https://yourmoontg.github.io/assets/icons/icon-robot.svg">
+
+    <!-- Browser UI theming -->
+    <meta name="theme-color" content="#0a0a0a">
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moon",
+      "jobTitle": "Программист",
+      "description": "Специалист по ИИ‑сервисам, Telegram‑экосистемам и backend‑системам",
+      "url": "https://yourmoontg.github.io",
+      "sameAs": [
+        "https://github.com/YourMoonTG",
+        "https://t.me/m00n_ecosys"
+      ],
+      "knowsAbout": [
+        "ИИ сервисы",
+        "Telegram боты",
+        "Backend разработка",
+        "Python",
+        "C++",
+        "Архитектура систем",
+        "DevOps"
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Moon Portfolio",
+      "url": "https://yourmoontg.github.io",
+      "description": "Портфолио программиста Moon - ИИ‑сервисы, Telegram‑экосистемы, Backend разработка",
+      "author": {
+        "@type": "Person",
+        "name": "Moon"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://yourmoontg.github.io/blog.html?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-text">Moon</span>
+                </div>
+                <nav class="nav">
+                    <a href="#about" class="nav-link">О себе</a>
+                    <a href="#portfolio" class="nav-link">Портфолио</a>
+                    <a href="blog.html" class="nav-link">Блог</a>
+                    <a href="#contact" class="nav-link">Контакты</a>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">
+                    <img class="theme-icon icon-img icon-24" src="assets/icons/icon-moon.svg" alt="Тёмная тема">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главная секция -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line" id="greeting">Привет, я</span>
+                    <span class="title-line highlight" id="name">Moon</span>
+                    <span class="title-line" id="question">познакомимся?</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Помогаю запускать и масштабировать ИИ‑сервисы, Telegram‑экосистемы и backend‑системы с упором на&nbsp;производительность, надёжность и понятную архитектуру.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Для кого и какие задачи решаю -->
+    <section class="clients" id="clients">
+        <div class="container">
+            <h2 class="section-title">Для кого я полезен</h2>
+            <div class="clients-grid">
+                <div class="client-card">
+                    <div class="client-icon">
+                        <img class="icon-img icon-32" src="assets/icons/icon-robot.svg" alt="ИИ и автоматизация">
+                    </div>
+                    <h3>Владельцы Telegram‑сеток и медиа</h3>
+                    <p>Нужна умная автоматизация вокруг каналов и чатов: ИИ‑ответы, аналитика, антидетект, управление сотнями аккаунтов.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">
+                        <img class="icon-img icon-32" src="assets/icons/icon-stack.svg" alt="Backend и архитектура">
+                    </div>
+                    <h3>Продуктовые команды и стартапы</h3>
+                    <p>Нужен инженер, который спроектирует и реализует ядро сервиса: API, очереди, хранение данных, интеграции.</p>
+                </div>
+                <div class="client-card">
+                    <div class="client-icon">
+                        <img class="icon-img icon-32" src="assets/icons/icon-tools.svg" alt="Оптимизация и DevOps">
+                    </div>
+                    <h3>Проекты с болью в перфе и надёжности</h3>
+                    <p>Есть уже работающая система, но она падает под нагрузкой, сложно дебажится или деплоится вручную — прихожу, наводим порядок.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция проектов -->
+    <section class="projects" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <a href="projects/smart-committer.html" class="project-card project-link">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <img class="icon-img icon-80" src="assets/icons/icon-robot.svg" alt="Иконка робота">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Smart Committer</h3>
+                        <p class="project-description">ИИ система для мониторинга Telegram-каналов и автогенерации ответов</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++20</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">OpenAI GPT-4</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="projects/tebium-ecosystem.html" class="project-card project-link">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <img class="icon-img icon-80" src="assets/icons/icon-world.svg" alt="Иконка глобуса">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TeBium Ecosystem</h3>
+                        <p class="project-description">Модульная экосистема для управления Telegram ботами с аналитикой</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">aiogram</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="projects/custom-linux.html" class="project-card project-link">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <img class="icon-img icon-80" src="assets/icons/icon-linux.svg" alt="Иконка Linux">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Кастомный Linux</h3>
+                        <p class="project-description">Автоматизированная настройка Arch Linux WSL с современными инструментами</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PowerShell</span>
+                            <span class="tech-tag">Arch Linux</span>
+                            <span class="tech-tag">zsh</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция "О себе" -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О себе</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Мне важны три вещи: понятность, безопасность и предсказуемое поведение системы. Работаю с Python, C++, PostgreSQL, Docker, aiogram и инфраструктурой вокруг этого — из этих кирпичей собираю аккуратные сервисы: от Telegram‑экосистем и ИИ‑интеграций до backend‑ядра продукта.</p>
+                    <p>Чаще всего подключаюсь, когда уже есть пользователи и нагрузка: что‑то падает, тормозит, сложно диагностировать или развивать дальше без риска сломать остальное. Вместе формулируем задачу, согласуем рамки и формат работы, дальше аккуратно наводим порядок и развиваем систему по шагам.</p>
+                </div>
+                <div class="about-skills">
+                    <h3>Сильные стороны</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Высоконагруженные сервисы и очереди</div>
+                        <div class="skill-item">ИИ‑интеграции (GPT‑4, Claude и др.)</div>
+                        <div class="skill-item">Telegram‑боты и многoаккаунтные системы</div>
+                        <div class="skill-item">Архитектура и дизайн систем</div>
+                        <div class="skill-item">Логи, метрики, алерты, наблюдаемость</div>
+                        <div class="skill-item">CI/CD, Docker, инфраструктура под прод</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мини‑FAQ для заказчиков -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Частые вопросы</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>В каком формате вы работаете?</h3>
+                    <p>Обычно это проектная работа с последующим сопровождением. Мы договариваемся о рамках задачи, сроках и формате связи, дальше я веду реализацию и помогаю поддерживать сервис после запуска.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>С чего начинается работа над проектом?</h3>
+                    <p>С короткого описания задачи или созвона. Мне важно понять, какую рутину нужно убрать и какой результат вы хотите видеть. После этого я предлагаю вариант реализации и примерные сроки.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Берёте ли вы проекты с уже существующим кодом?</h3>
+                    <p>Да, но начинаю с небольшого обзора текущего решения. Если код проще поддерживать, чем выбросить, работаем дальше; если нет — предлагаю вариант аккуратной переработки без остановки бизнеса.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Какие задачи точно не подойдут?</h3>
+                    <p>Задачи формата “быстрый костыль” внутри сложной или критичной системы, когда нужно что‑то срочно прикрутить без обсуждения безопасности, поддержки и влияния на бизнес. Также истории без понятной цели и критериев результата — когда непонятно, что именно должно измениться после внедрения решения.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-inner">
+                <h2 class="cta-title">Нужно разобрать текущий сервис или запустить новый?</h2>
+                <p class="cta-text">
+                    Работаю с проектами, где важны стабильность, понятная архитектура и прозрачная поддержка: от Telegram‑экосистем и ИИ‑инструментов до backend‑сервисов и инфраструктуры вокруг них. Коротко опишите, что у вас сейчас и какого результата ждёте&nbsp;&mdash; дальше предложу конкретный план без сюрпризов.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://t.me/Tigran_Gabreliyan" class="cta-button primary-cta">Написать в Telegram</a>
+                    <a href="mailto:moon@example.com" class="cta-button secondary-cta">Написать на почту</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Готов к новым проектам и интересным задачам!</p>
+                    <div class="contact-links">
+                        <a href="mailto:moon@example.com" class="contact-link">
+                            <img class="contact-icon icon-img" src="assets/icons/icon-mail.svg" alt="Почта">
+                            moon@example.com
+                        </a>
+                        <a href="https://github.com/YourMoonTG" class="contact-link">
+                            <img class="contact-icon icon-img" src="assets/icons/icon-github.svg" alt="GitHub">
+                            GitHub
+                        </a>
+                        <a href="https://t.me/m00n_ecosys" class="contact-link">
+                            <img class="contact-icon icon-img" src="assets/icons/icon-telegram.svg" alt="Telegram">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="js/particles.js"></script>
+</body>
+</html>
